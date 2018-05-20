@@ -1,0 +1,46 @@
+@import '~antd/dist/antd.css';
+
+.container {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 50px auto;
+  grid-row-gap: 15px;
+}
+
+.login-form, .signup-form {
+  margin: 0 auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  width: 500px;
+}
+
+.content {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+
+.app-header {
+  display: flex;
+  justify-content: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;  
+  background-color: white;
+  padding: 5px 0;
+  border-bottom: 1px solid #e8e8e8;
+ }
+
+ .header-user-block {
+   margin-right: 10%;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+ }
+
+ .new-link {
+  grid-column-start: 3;
+  margin-left: 10px;
+ }
